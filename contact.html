@@ -1,0 +1,276 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+<head>
+	<title>MAK Pvt Ltd.</title>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+	
+	<script src=" js/jquery-1.6.2.min.js" type="text/javascript" charset="utf-8"></script>
+	<!--[if IE 6]>
+		<script src="js/DD_belatedPNG-min.js" type="text/javascript" charset="utf-8"></script>
+	<![endif]-->
+	<script src="js/jquery.jcarousel.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/functions.js" type="text/javascript" charset="utf-8"></script>
+    
+    <script type="text/javascript">
+		function check()
+		{
+			var name = document.contact.username;
+			var email = document.contact.email;
+			var subject = document.contact.subject;
+			
+			if( name.value == "" )
+			{
+				alert( "Please provide Username!" );
+				name.focus() ;
+				return false;
+			}
+			if( email.value == "" )
+			{
+				alert( "Please provide a valid Email id!" );
+				email.focus() ;
+				return false;
+			}
+			if( subject.value.length < 3 )
+			{
+				alert( "Please enter your Feedback!" );
+				subject.focus() ;
+				return false;
+			}
+			return ( true );
+		}
+		
+		function numberOnly()
+		{
+			if(event.keyCode < 48 || event.keyCode > 57)
+				event.returnValue = false;	
+		}
+		
+	</script>
+    
+</head>
+<body>
+	<!-- Begin Wrapper -->
+	<div id="wrapper">
+		<!-- Begin Search -->
+		<div id="search">
+			<div class="shell">
+				<form action="#" method="get" accept-charset="utf-8">
+					<div class="container">
+						<input type="text" value="Keywords..." title="Keywords..." class="blink" />
+					</div>
+					<input class="search-button" type="submit" value="Submit" />
+				</form>
+				<div class="cl">&nbsp;</div>
+			</div>
+		</div>
+		<!-- End Search -->
+		<!-- Begin Header -->
+		<div id="header" class="shell">
+			<h1 id="logo"><a class="notext" href="#" title="MAK Pvt. Ltd.">MAK Pvt. Ltd.</a></h1>
+		</div>
+		<!-- End Header -->
+		<!-- Begin Navigation -->
+		<div id="navigation">
+			<div class="shell">
+				<ul>
+					<li><a href="home.html" title="Home">Home</a></li>
+					<li><a href="offers.html" title="Special Offers">Special Offers</a></li>
+					<li><a href="main_login.html" title="Log In">Log In</a></li>
+					<li><a href="contact.html" title="Contact">Contact</a></li>
+				</ul>
+				<div class="cl">&nbsp;</div>
+			</div>
+		</div>
+		<!-- End Navigation -->
+<!-- Begin Slider -->
+		<div id="slider">
+			<div class="slider-outer">
+				<div class="slider-inner shell">
+					<!-- Begin Slider Items -->
+					<ul class="slider-items">
+						<li>
+							<img src="css/images/33.png" alt="Slide Image 1" />
+							<div class="slide-entry">
+								<h2>Apple I Phones</h2>
+								<h3>Iphone 4, 4S,5,5S and many more. </h3>
+							</div>
+							<a href="#" class="more" title="View More">View More</a>
+						</li>
+						<li>
+							<img src="css/images/33.png" alt="Slide Image 2" />
+							<div class="slide-entry">
+								<h2>Nokia Lumia Phones</h2>
+								<h3>Lumia 620,Lumia 625,Lumia 630,Lumia 720 and many more. </h3>
+							</div>
+							<a href="#" class="more" title="View More">View More</a>
+						</li>
+						<li>
+							<img src=" css/images/33.png" alt="Slide Image 3" />
+							<div class="slide-entry">
+								<h2>Samsung phones</h2>
+								<h3>Samsung Galaxy series, Samsung S series and many more. </h3>
+							</div>
+							<a href="#" class="more" title="View More">View More</a>
+						</li>
+						<li>
+							<img src=" css/images/33.png" alt="Slide Image 4" />
+							<div class="slide-entry">
+								<h2>Tablets</h2>
+								<h3>Apple tabs and Samsung tabs. </h3>
+							</div>
+							<a href="#" class="more" title="View More">View More</a>
+						</li>
+					</ul>
+					<!-- End Slider Items -->
+					<div class="cl">&nbsp;</div>
+					<div class="slider-controls">
+						
+					</div>
+				</div>
+			</div>
+			<div class="cl">&nbsp;</div>
+		</div>
+		<!-- End Slider -->		<!-- Begin Main -->
+		<div id="main">
+			<!-- Begin Inner -->
+			<div class="inner">
+				<div class="shell">
+					<!-- Begin Left Sidebar -->
+					<div id="left-sidebar" class="sidebar">		
+							
+					</div>
+					<!-- End Sidebar -->
+					<!-- Begin Content -->
+					<div id="content">
+						<!-- Begin Post -->
+						<div class="post">
+							<h2>Live Support<span class="title-bottom">&nbsp;</span></h2>
+                            <p><h3>24 hours | 7 days a week | 365 days a year &nbsp;&nbsp; Live Technical Support</h3></p>
+							<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. </p>
+						</div>
+						<!-- End Post -->
+						<!-- Begin Products -->
+						<!--<div id="products">-->
+							<h2>Contact Us<span class="title-bottom">&nbsp;</span></h2>
+                            
+                           
+                            <form name="contact" method="POST" action="contact.php" onsubmit="return(check());">
+                            <div id="products">
+							<div class="product">
+									<span class="mine">NAME<star>*</star></span>
+                                    <br />
+							</div>
+							<div class="product">
+								
+							</div>
+							<div class="product last">
+								<span class="mine"><input type="text" name="username" value=""/></span>
+							</div>
+							<div class="cl">&nbsp;</div>
+							<div class="product">
+								<span class="mine">EMAIL<star>*</star></span>
+							</div>
+							<div class="product">
+								
+							</div>
+							<div class="product last">
+								<span class="mine"><input type="email" name="email" value=""/></span>
+							</div> 
+							<div class="cl">&nbsp;</div>                         
+							<div class="product">
+								<span class="mine">Mobile No.</span>
+							</div>
+							<div class="product">
+								
+							</div>
+							<div class="product last">
+								<span class="mine"><input type="tel" name="number" value="" onkeypress="numberOnly()"/></span>
+							</div>
+							<div class="cl">&nbsp;</div>
+                            <div class="product">
+								<span class="mine">Subject<star>*</star></span>
+							</div>
+							<div class="product">
+								
+							</div>
+							<div class="product last">
+								<span class="mine"><textarea name="subject" cols="40" rows="10"> </textarea></span>
+							</div>
+							<div class="cl">&nbsp;</div>
+						</div>
+                        
+                            <div class="product">
+								
+							</div>
+							<div class="product">
+								
+							</div>
+							<div class="product last">
+								<span class="mine"><input type="submit" value="SUBMIT" /></span>
+							</div>
+                            </form>
+							<div class="cl">&nbsp;</div>
+                            
+						<!--</div>-->
+						<!-- End Products -->
+					</div>
+					<!-- End Content -->
+					<!-- Begin Right Sidebar -->
+					<div id="right-sidebar" class="sidebar">
+						<ul>
+							<li class="widget products-box">
+								<h2>Find us Here</h2>
+								<div class="widget-entry">
+									<ul>
+										<iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Lighthouse+Point,+FL,+United+States&amp;aq=4&amp;oq=light&amp;sll=26.275636,-80.087265&amp;sspn=0.04941,0.104628&amp;ie=UTF8&amp;hq=&amp;hnear=Lighthouse+Point,+Broward,+Florida,+United+States&amp;t=m&amp;z=14&amp;ll=26.275636,-80.087265&amp;output=embed"></iframe><br><small><a href="https://maps.google.co.in/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Lighthouse+Point,+FL,+United+States&amp;aq=4&amp;oq=light&amp;sll=26.275636,-80.087265&amp;sspn=0.04941,0.104628&amp;ie=UTF8&amp;hq=&amp;hnear=Lighthouse+Point,+Broward,+Florida,+United+States&amp;t=m&amp;z=14&amp;ll=26.275636,-80.087265" style="color:#666;text-align:left;font-size:12px">View Larger Map</a></small>
+									</ul>
+									<div class="cl">&nbsp;</div>
+								</div>
+							</li>
+                            
+							<li class="widget products-box">
+                            	<div class="widget-entry">
+									<ul>
+										<h2>Company Information </h2>
+						    			<p>VESIT,</p>
+						   				<p>Collector Colony, Chembur,</p>
+						   				<p>Mumbai, India</p>
+				   						<p>Phone:(91) 8600223633</p>
+				   						<p>Fax: (000) 000 00 00 0</p>
+				 	 					<p>Email: <span>info@mycompany.com</span></p>
+				   			<p>Follow on: <span>Facebook</span>, <span>Twitter</span></p>								
+									</ul>
+									<div class="cl">&nbsp;</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<!-- End Sidebar -->
+					<div class="cl">&nbsp;</div>
+				</div>
+			</div>
+			<!-- End Inner -->
+		</div>
+		<!-- End Main -->
+		<!-- Begin Footer -->
+		<div id="footer">
+			<div class="shell">
+				<p class="bottom-menu">
+                	<a href="home.html" title="Home">Home</a><span>|</span>
+                    <a href="offers.html" title="Special Offers">Special Offers</a><span>|</span>
+                    <a href="main_login.html" title="Log In">Log In</a><span>|</span>
+                    <a href="contact.html" title="Contact">Contact</a>
+                </p>
+			<p>Copyright &copy; MAK Pvt Ltd. Design by: <a href="#" title="Mohit Aakash Kashish">M-A-K</a>. All Rights Reserved</p>
+				<div class="cl">&nbsp;</div>
+			</div>
+		</div>
+		<!-- End Footer -->
+	</div>
+	<!-- End Wrapper -->
+    
+   <a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
+   
+</body>
+</html>

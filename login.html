@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+<head>
+	<title>MAK Pvt Ltd.</title>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+	
+	<script src="js/jquery-1.6.2.min.js" type="text/javascript" charset="utf-8"></script>
+	<!--[if IE 6]>
+		<script src="js/DD_belatedPNG-min.js" type="text/javascript" charset="utf-8"></script>
+	<![endif]-->
+	<script src="js/jquery.jcarousel.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/functions.js" type="text/javascript" charset="utf-8"></script>
+    <script src="script.js" type="text/javascript"></script>
+    
+    <script type="text/javascript">
+		function numberOnly()
+		{
+			if(event.keyCode < 48 || event.keyCode > 57)
+				event.returnValue = false;	
+		}
+	</script>
+    
+</head>
+<body>
+	<!-- Begin Wrapper -->
+	<div id="wrapper">
+		<!-- Begin Search -->
+		<div id="search">
+			<div class="shell">
+									
+				<div class="cl">&nbsp;</div>
+			</div>
+		</div>
+		<!-- End Search -->
+		<!-- Begin Header -->
+		<div id="header" class="shell">
+			<h1 id="logo"><a class="notext" href="#" title="MAK Pvt. Ltd.">MAK Pvt. Ltd.</a></h1>
+		</div>
+		<!-- End Header -->
+		<!-- Begin Navigation -->
+		<div id="navigation">
+			<div class="shell">
+				<ul>
+					<li><a href="home.html" title="Home">Home</a></li>
+					<li><a href="offers.html" title="Special Offers">Special Offers</a></li>
+					<li><a href="main_login.html" title="Log In">Log In</a></li>
+					<li><a href="contact.html" title="Contact">Contact</a></li>
+				</ul>
+				<div class="cl">&nbsp;</div>
+			</div>
+		</div>
+     </div>
+		<!-- End Navigation -->
+              
+            <div id="cointainer_body">
+            	<div id="container">
+                	<h1><font color="#FFD700">Registeration</font></h1><br> 	
+			<form  name="registeration" method="POST" action="register.php" onsubmit="return(checkForm());">
+			<center><table>
+			<tr>
+				<th>Username<star>*</star></th><td><input type="text" id="username1" name="username" onblur="validate('username', this.value)"></td>
+			</tr>
+			<tr>
+				<th>Password<star>*</star></th><td><input type="password" id="pass1" name="password1" onblur="validate('password1', this.value)"></td>
+			</tr>
+			<tr>
+				<th>Retype Password<star>*</star></th><td><input type="password" id="pass2" name="password2" onblur="validate('password2', this.value)"></td>
+			</tr>
+			<tr>
+		<th>Email<star>*</star></th><td><input type="email" id="email1" name="email" onblur="validate('email', this.value)"></td>
+			</tr>
+			<tr>
+				<th>Contact No.</th><td><input type="tel" id="contact1" name="contact" onkeypress="numberOnly()"></td>
+			</tr>
+			<tr>
+				<th>Date of Birth<star>*</star></th><td><input type="date" id="date1" name="date" onblur="validate('date', this.value)"></td>
+			</tr>
+			<tr>
+				<th>Address</th><td><textarea id="address1" name="address" rows="5" cols="16"></textarea></td>
+			</tr>
+			<tr>
+				<td><input type="submit" name="submit" value="Register"></td>
+				<td><input type="reset" name="reset" value="Reset"></td>
+			</tr>
+			</table></center>
+		</form>
+                </div>
+               <center> <font color="#FF0000">Fields marked with * are mandatory fields</font> </center>
+            </div>
+			<!-- Begin Footer -->
+        <div id="wrapper">
+		<div id="footer">
+			<div class="shell">
+				<p class="bottom-menu">
+                	<a href="home.html" title="Home">Home</a><span>|</span>
+                    <a href="offers.html" title="Special Offers">Special Offers</a><span>|</span>
+                    <a href="main_login.html" title="Log In">Log In</a><span>|</span>
+                    <a href="contact.html" title="Contact">Contact</a>
+                </p>
+			<p>Copyright &copy; MAK Pvt Ltd. Design by: <a href="#" title="Mohit Aakash Kashish">M-A-K</a>. All Rights Reserved</p>
+				<div class="cl">&nbsp;</div>
+			</div>
+		</div>
+		<!-- End Footer -->
+	</div>
+</body>
+</html>

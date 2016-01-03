@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+<head>
+	<title>MAK Pvt Ltd.</title>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+	
+	<script src=" js/jquery-1.6.2.min.js" type="text/javascript" charset="utf-8"></script>
+	<!--[if IE 6]>
+		<script src="js/DD_belatedPNG-min.js" type="text/javascript" charset="utf-8"></script>
+	<![endif]-->
+	<script src="js/jquery.jcarousel.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/functions.js" type="text/javascript" charset="utf-8"></script>
+    
+	<script type="text/javascript">
+		function Validate()
+		{
+			var name = document.login.username;
+			var pass = document.login.password;
+			
+			if( name.value == "" )
+			{
+				alert( "Please provide Username!" );
+				name.focus() ;
+				return false;
+			}
+			if( pass.value == "" )
+			{
+				alert( "Please provide Password!" );
+				pass.focus() ;
+				return false;
+			}
+			return ( true );
+		}
+	</script>
+</head>
+<body>
+	<!-- Begin Wrapper -->
+	<div id="wrapper">
+		<!-- Begin Search -->
+		<div id="search">
+			<div class="shell">
+				<form action="#" method="get" accept-charset="utf-8">
+					<div class="container">
+						<input type="text" value="Keywords..." title="Keywords..." class="blink" />
+					</div>
+					<input class="search-button" type="submit" value="Submit" />
+				</form>
+				<div class="cl">&nbsp;</div>
+			</div>
+		</div>
+		<!-- End Search -->
+		<!-- Begin Header -->
+		<div id="header" class="shell">
+			<h1 id="logo"><a class="notext" href="#" title="MAK Pvt. Ltd.">MAK Pvt. Ltd.</a></h1>
+		</div>
+		<!-- End Header -->
+		<!-- Begin Navigation -->
+		<div id="navigation">
+			<div class="shell">
+				<ul>
+					<li><a href="home.html" title="Home">Home</a></li>
+					<li><a href="offers.html" title="Special Offers">Special Offers</a></li>
+					<li><a href="main_login.html" title="Log In">Log In</a></li>
+					<li><a href="contact.html" title="Contact">Contact</a></li>
+				</ul>
+				<div class="cl">&nbsp;</div>
+			</div>
+		</div>
+		<!-- End Navigation -->
+
+		<!-- Begin Main -->
+		<div id="main">
+        
+			<!-- Begin Inner -->
+			<div class="inner">
+            
+            
+				<div class="shell">
+					<center><font color="#FFFFFF"><h1>Log In!</h1></font></center><br><br>
+                    
+                    <div id="login">
+                    	<center>
+                        	<p>Not a Registered User! <a href="login.html" title="sign_up">Sign Up</a>, and get Registered!</p>
+                            <br /><br /><br /><br />
+                        	<img src="css/images/mobile_device_image3.jpg" alt="MAK" width="400px" height="400px"  />
+                            <br /><br />
+                            
+                            <table cellpadding="15px" cellspacing="15px">
+                            	<form name="login" method="post" action="login.php" onsubmit="return(Validate());">
+                                	<tr>
+                                    	<th>Username<star>*</star></th>
+                                        <td><input type="text" name="username" /></td>
+                                    </tr>
+                                    <tr>
+                                    	<th>Password<star>*</star></th>
+                                        <td><input type="password" name="password" /></td>
+                                    </tr>
+                                    <tr>
+                                    	<th></th>
+                                        <td><input type="submit" value="Lets Go!" /></td>
+                                    </tr>
+                                </form>
+                            </table>
+                        </center>
+                    </div>
+                    
+				</div>
+			</div>
+			<!-- End Inner -->
+		</div>
+		<!-- End Main -->
+		<!-- Begin Footer -->
+		<div id="footer">
+			<div class="shell">
+				<p class="bottom-menu">
+                	<a href="home.html" title="Home">Home</a><span>|</span>
+                    <a href="offers.html" title="Special Offers">Special Offers</a><span>|</span>
+                    <a href="main_login.html" title="Log In">Log In</a><span>|</span>
+                    <a href="contact.html" title="Contact">Contact</a>
+                </p>
+			<p>Copyright &copy; MAK Pvt Ltd. Design by: <a href="#" title="Mohit Aakash Kashish">M-A-K</a>. All Rights Reserved</p>
+				<div class="cl">&nbsp;</div>
+			</div>
+		</div>
+		<!-- End Footer -->
+	</div>
+	<!-- End Wrapper -->
+    
+   <a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
+   
+</body>
+</html>
